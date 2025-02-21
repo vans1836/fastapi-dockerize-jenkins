@@ -58,6 +58,16 @@ EXPOSE 80
 # CMD pipenv run uvicorn main:app --host 0.0.0.0 --port 80
 CMD pipenv run python3 ./main.py
 ```
+### build image using docker
+
+`docker build -t imagename:v1 .`
+
+check docker image
+`docker images`
+
+test docker image and run docker container
+`docker run imagename`
+
 
 ### Github Actions for docker image creation 
 `.github/workflows/DockerBuild.yml`
