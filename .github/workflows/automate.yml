@@ -1,25 +1,25 @@
-name: Docker image build
+# name: Docker image build
 
-on: push
+# on: push
 
-jobs:
-    build:
+# jobs:
+#     build:
 
-        runs-on: ubuntu-latest
+#         runs-on: ubuntu-latest
 
-        steps: 
-            - uses: actions/checkout@v1
-            - name: testing
-              run: |
-                ls
-                pwd
-                cat main.py
-                cat Dockerfile
-                cat requirements.txt
+#         steps: 
+#             - uses: actions/checkout@v1
+#             - name: testing
+#               run: |
+#                 ls
+#                 pwd
+#                 cat main.py
+#                 cat Dockerfile
+#                 cat requirements.txt
 
 
-            # - name: Build & Push Image
-            #   run: |
-            #     echo ${{ secrets.DOCKERTOKEN }} | docker login -u "prateekrajgautam" --password-stdin
-            #     docker build -t prateekrajgautam/upesmajorproject:v0.1 .
-            #     docker push prateekrajgautam/upesmajorproject:v0.1
+#             # - name: Build & Push Image
+#             #   run: |
+#             #     echo ${{ secrets.DOCKERTOKEN }} | docker login -u "prateekrajgautam" --password-stdin
+#             #     docker build -t prateekrajgautam/upesmajorproject:v0.1 .
+#             #     docker push prateekrajgautam/upesmajorproject:v0.1
